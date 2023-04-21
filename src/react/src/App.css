@@ -1,0 +1,347 @@
+body
+{
+	background-color: #144272
+}
+.upper
+{
+	position: inherit;
+	flex-flow: row wrap;
+}
+
+.logo
+{
+	margin-top: 1rem;
+	margin-left: 1.5rem;
+	justify-content: center;
+}
+
+.bar
+{
+	font-size: 0.8rem;
+	border-radius: 1rem;
+	margin: 0.6rem;
+	font-family: Inter,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif;
+
+	
+}
+
+.bar ul
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0.5rem;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 0.8rem;
+	color: rgb(97, 136, 255);
+}
+.lower-nav ul
+{
+	list-style-type: none;
+	margin: 0.5rem;
+	margin-right: 5rem;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 0.7rem;
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	font-family: Inter,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif;
+}
+.after-logo
+{
+	margin-left: 1.5rem;
+	position: relative;
+	top: 0.34rem;
+		
+}
+.last-two:last-child
+{
+	padding-left: 1rem;
+}
+.bar .login-btn
+{
+	background-color: rgb(34,37,49);
+	border-radius: 0.7rem;
+	border: #6188ff solid 1px;
+	font-family: Inter,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif;
+	font-weight: bold;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	padding-left: 1.2rem;
+	padding-right: 1.2rem;
+	color: #6188ff;
+	display: inline;
+	margin-left: 0.2rem;
+}
+.wall
+{
+	margin: 0px 0px 0px 4px;
+	width: 1px;
+	background-color: #323546;
+	display: block;
+	height: 22.5px;
+
+}
+.fa-sun
+{
+	font-size: 1.2rem;
+	color: white;
+}
+
+.curr, .lang
+{
+	color: white;
+	font-weight: bold;
+}
+.lang
+{
+	margin-left: 5rem;
+}
+
+.bar .signup-btn
+{
+	background-color: rgb(56, 97, 251);
+	border-radius: 0.7rem;
+	border: rgb(56, 97, 251) solid 1px;
+	font-family: Inter,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif;
+	font-weight: bold;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	padding-left: 1.2rem;
+	padding-right: 1.2rem;
+	color: white;
+	display: inline;
+
+}
+@media screen and (max-width: 1353px)
+{
+	.bar .login-btn
+	{
+		display: none;
+	}
+	.bar .signup-btn
+	{
+		display: none;
+	}
+	.wall	
+	{
+		display: none;
+	}
+	
+}
+@media screen and (max-width: 1140px)
+{
+	.bar .login-btn
+	{
+		display: none;
+	}
+	.bar .signup-btn
+	{
+		display: none;
+	}
+	.fa-sun
+	{
+		display: none;
+		
+	}
+	
+	.curr, .lang
+	{
+		display: none;
+		
+	}
+	.wall
+	{
+		display: none;
+	}
+	.bar .fa-sun
+	{
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 1040px)
+{
+	.after-logo
+	{
+		display: none;
+	}
+	.logo
+	{
+		margin-right: 1rem;
+	}
+}
+@media screen and (max-width: 578px)
+{
+	.last-two
+	{
+	
+	}
+}
+.body-part
+{
+	margin-top: 2rem;
+	color: white;
+	font-family: Inter,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif;
+}
+
+.news
+{
+
+	width: 56%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.body-part h1
+{
+	margin-bottom: 0;
+	font-size: 1.7rem;
+}
+
+.body-part p
+{
+	padding:0px; 
+	color: rgb(173, 173, 173);
+	font-size: bold;
+	font-size: 1rem;
+}
+.body-part .value-p
+{
+	color: red;
+	font-size: 1.02rem;
+	font-weight: bold;
+}
+.body-part a
+{
+	margin-left: 0.2rem;
+	padding:0px; 
+	color: rgb(173, 173, 173);
+	font-size: bold;
+}
+
+.table
+{
+	/* border: #6188ff solid 1px; */
+	padding-top: 1rem;
+	margin: 0 auto;
+}
+.table .table-content
+{
+	width: 85%;
+	margin: 0 auto;
+	background-color: rgb(34, 37, 49);
+	padding: 0.15rem;
+	border-radius: 0.5rem;
+	box-shadow: 0px 0px 6px rgb(61, 69, 103);
+}
+
+.table-content ul
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0.5rem;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 3.7rem;
+	color: rgb(255, 255, 255);
+	
+	font-weight: bold;
+	font-family:Inter,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif;
+}
+
+table
+{
+	color: rgb(255, 254, 254);
+	font-size: 1rem;
+	padding: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+	
+	font-family: Inter,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif;
+}
+
+.coins .rows-s
+{
+	text-align: center;
+	border-radius: 71px;
+	-webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 0px 0px rgba(10,38,71,0.06); 
+	box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 0px 0px rgba(10,38,71,0.06);
+	
+	/* box-shadow:  23px 23px 46px #161820,
+				 -23px -23px 46px #2e3242; */
+
+}
+.coins td:hover:nth-child(2)
+{
+	cursor: pointer;
+}
+.coins 
+{
+	margin-bottom: 3rem;
+}
+
+.coins .rows-s tr, td
+{
+	padding: 0.6rem;
+}
+
+.footer-container-basic
+{
+	position: fixed;
+	bottom: 58px;
+	width: 100%;
+	height: 2%;
+
+}
+
+.footer-container
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-left: 5%;
+	margin-right: 5%;
+	
+	border-radius: 50px;
+	background: linear-gradient(45deg, #171922f7, #1c1e29e6);
+	box-shadow:  20px -20px 60px #13151c,
+				 -20px 20px 60px #212330;
+}
+.footer-container:hover
+{
+	background: linear-gradient(15deg, #272937, #171922);
+}
+
+.footer-container .left
+{
+	float: left;
+	margin-left: 50px;
+	padding: 1rem;
+	color: rgb(175, 175, 175);
+	align-items: center;
+	font-size: 0.7rem;
+	font-family: Inter,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif;
+}
+.footer-container .right
+{
+	float: right;
+	margin-right: 50px;
+	padding: 1rem;
+	color: rgb(227, 226, 226);
+	align-items: center;
+	font-size: 1.5rem;
+	margin-top: 5px;
+	font-family: Inter,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif;
+}
+.footer-container .right i
+{
+	margin-right: 1.7rem;
+}

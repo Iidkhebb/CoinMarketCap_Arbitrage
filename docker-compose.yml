@@ -1,0 +1,99 @@
+version: '3.5'
+
+networks:
+  warper-network:
+    name: warper-network
+    driver: bridge
+
+volumes:
+
+  mongodb:
+    driver: local
+    name: mongodb
+    driver_opts:
+      type: none
+      device:  /home/zoom/django_base/vl/mongodb
+      o: bind
+
+  django:
+    driver: local
+    name: django
+    driver_opts:
+      type: none
+      device:  /home/zoom/django_base/vl/django
+      o: bind
+  react:
+    driver: local
+    name: react
+    driver_opts:
+      type: none
+      device:  /home/zoom/django_base/vl/react
+      o: bind
+
+services:
+  
+  redis:
+    container_name: redis
+    build: ./src/redis
+    networks:
+      - warper-network
+    restart: unless-stopped
+  
+  django:
+    container_name: django
+    build: ./src/django
+    networks:
+      - warper-network
+    ports:
+      - "8000:8000"
+    volumes:
+      - django:/app
+    depends_on:
+      - mongodb
+    env_file:
+      - .env
+    restart: unless-stopped
+
+  mongodb:
+    container_name: mongodb
+    build: ./src/mongodb
+    networks:
+      - warper-network
+    volumes:
+      - mongodb:/data/db
+    env_file:
+      - .env
+    ports:
+      - "27017:27017"
+    restart: unless-stopped
+
+  celery:
+    container_name: celery
+    build: ./src/celery
+    networks:
+      - warper-network
+    depends_on:
+      - django
+      - redis
+    env_file:
+      - .env
+    volumes:
+      - django:/app
+    restart: unless-stopped
+
+  react:
+    container_name: react
+    build: ./src/react
+    networks:
+      - warper-network
+    ports:
+      - "3000:3000"
+    volumes:
+      - react:/app
+    depends_on:
+      - django
+      - mongodb
+    env_file:
+      - .env
+    restart: unless-stopped
+  

@@ -1,0 +1,12 @@
+Django==3.1.1
+celery==5.2.7
+gevent==22.10.2
+django-cors-headers
+djangorestframework
+redis==4.5.4
+djongo==1.3.6
+sqlparse==0.2.4
+pymongo==3.12.1
+ratelimit
+requests==2.27.1
+bs4==0.0.1
