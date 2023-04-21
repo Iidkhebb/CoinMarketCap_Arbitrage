@@ -56,8 +56,8 @@ support a minimum of 1000$ order size.</li>
 2. Clone the repository:
 
 ```
-git clone https://github.com/username/repo.git
-cd repo
+git clone https://github.com/Iidkhebb/CoinMarketCap_Arbitrage
+cd CoinMarketCap_Arbitrage
 ```
 
 3. Create a new `.env` file in the project root directory and update the values according to your needs:
